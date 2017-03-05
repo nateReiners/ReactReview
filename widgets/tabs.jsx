@@ -31,20 +31,22 @@ class Tabs extends React.Component{
         klass = 'active';
       }
       return (
-        <h4 key={idx} onClick={this.selectTab(idx)} className={klass}>
+        <p key={idx} onClick={this.selectTab(idx)} className={klass}>
           {tab.title}
-        </h4>
+        </p>
       );
     })
     return (
       <div className="tabs-widget">
-        <h1>Tabs Widget</h1>
+        <h3>Tabs Widget</h3>
         <ul className="titles">
           {titles}
         </ul>
         <br></br>
         <div className="content">
-          {content}
+          <h4>
+            {content}
+          </h4>
         </div>
       </div>
     );

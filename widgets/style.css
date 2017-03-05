@@ -5,13 +5,15 @@ body, ul, div {
   list-style: none;
 }
 .tabs-widget {
+  margin-top: 10px;
   width: 200px;
   height: 300px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background: linear-gradient(white, yellow);
 }
 
 .titles {
@@ -22,12 +24,13 @@ body, ul, div {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  height: 100px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
-.titles > h4 {
-  margin-right: 10px;
-  margin-left: 10px;
+.titles > p {
+  margin-right: 5px;
+  margin-left: 5px;
   cursor: pointer;
   text-align: center;
 }
@@ -38,6 +41,8 @@ body, ul, div {
 }
 
 .content {
+  font-family: sans-serif;
+  height: 100%;
   color: red;
   height: auto;
   display: flex;
