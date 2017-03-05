@@ -52,10 +52,11 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { num1, num2, result } = this.state;
     return (
       <div>
-        <input onChange={this.setNum1} value={this.state.num1} />
-        <input onChange={this.setNum2} value={this.state.num2} />
+        <input onChange={this.setNum1} value={num1} />
+        <input onChange={this.setNum2} value={num2} />
         <button onClick={this.clear}>Clear</button>
         <br/>
         <button onClick={this.add}>+</button>
@@ -63,7 +64,7 @@ class Calculator extends React.Component {
         <button onClick={this.divide}>/</button>
         <button onClick={this.multiply}>*</button>
         <br/>
-        <h1>Result: {this.state.result}</h1>
+        <h1>Result: {result}</h1>
       </div>
     );
   }
